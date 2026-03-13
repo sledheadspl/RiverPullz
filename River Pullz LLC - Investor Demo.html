@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/WSC%20LLC/Downloads/RiverPullz.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>River Pullz LLC - Investor Demo</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #0f172a;
+  color: #fff;
+  line-height: 1.5;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-4, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-2xl {
+  font-size: 24px;
+}
+
+.text-3xl {
+  font-size: 30px;
+}
+
+.text-5xl {
+  font-size: 48px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 12px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-12 {
+  margin-top: 48px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.p-3 {
+  padding: 12px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.p-6 {
+  padding: 24px;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.rounded-xl {
+  border-radius: 12px;
+}
+
+.rounded-2xl {
+  border-radius: 16px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border: 1px solid #334155;
+}
+
+.border-top {
+  border-top: 1px solid #334155;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #334155;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-8 {
+  width: 32px;
+  height: 32px;
+}
+
+.w-10 {
+  width: 40px;
+  height: 40px;
+}
+
+.w-12 {
+  width: 48px;
+  height: 48px;
+}
+
+.w-16 {
+  width: 64px;
+  height: 64px;
+}
+
+.w-20 {
+  width: 80px;
+  height: 80px;
+}
+
+.w-24 {
+  width: 96px;
+  height: 96px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.aspect-video {
+  aspect-ratio: 16/9;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.text-slate-300 {
+  color: #cbd5e1;
+}
+
+.text-slate-400 {
+  color: #94a3b8;
+}
+
+.text-slate-500 {
+  color: #64748b;
+}
+
+.text-cyan {
+  color: #22d3ee;
+}
+
+.text-green {
+  color: #4ade80;
+}
+
+.text-purple {
+  color: #c084fc;
+}
+
+.text-pink {
+  color: #f472b6;
+}
+
+.text-red {
+  color: #f87171;
+}
+
+.text-yellow {
+  color: #facc15;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #22d3ee, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-slate-700 {
+  background: #334155;
+}
+
+.bg-slate-800 {
+  background: #1e293b;
+}
+
+.bg-slate-900 {
+  background: #0f172a;
+}
+
+.bg-red {
+  background: #ef4444;
+}
+
+.bg-cyan {
+  background: #06b6d4;
+}
+
+.bg-yellow {
+  background: #eab308;
+}
+
+.bg-main {
+  background: linear-gradient(to bottom, #0f172a, #1e293b, #0f172a);
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(to right, #9333ea, #ec4899);
+}
+
+.bg-cyan-gradient {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+.bg-tiktok {
+  background: linear-gradient(to right, #ec4899, #22d3ee);
+}
+
+.bg-green-subtle {
+  background: linear-gradient(135deg, rgba(20,83,45,0.3), rgba(6,78,59,0.3));
+  border: 1px solid rgba(34,197,94,0.2);
+}
+
+.bg-box-1 {
+  background: linear-gradient(to right, #2563eb, #06b6d4);
+}
+
+.bg-box-2 {
+  background: linear-gradient(to right, #9333ea, #ec4899);
+}
+
+.bg-box-3 {
+  background: linear-gradient(to right, #f97316, #dc2626);
+}
+
+.bg-box-4 {
+  background: linear-gradient(to right, #facc15, #f97316);
+}
+
+.bg-overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+.bg-overlay-dark {
+  background: rgba(0,0,0,0.85);
+}
+
+.bg-white-10 {
+  background: rgba(255,255,255,0.1);
+}
+
+.bg-white-20 {
+  background: rgba(255,255,255,0.2);
+}
+
+.bg-cyan-20 {
+  background: rgba(6,182,212,0.2);
+}
+
+.bg-red-20 {
+  background: rgba(239,68,68,0.2);
+}
+
+.bg-green-20 {
+  background: rgba(34,197,94,0.2);
+}
+
+.bg-yellow-20 {
+  background: rgba(234,179,8,0.2);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  font-family: inherit;
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  padding: 12px 24px;
+  border-radius: 12px;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 24px;
+  border-radius: 12px;
+}
+
+.btn-live {
+  background: linear-gradient(to right, #ef4444, #ec4899);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.card {
+  background: rgba(30,41,59,0.5);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+input {
+  background: #334155;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+input:disabled {
+  opacity: 0.5;
+}
+
+input:focus {
+  border-color: #06b6d4;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 16px;
+}
+
+.modal-content {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.studio-layout {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.studio-main {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.studio-chat {
+  width: 320px;
+  background: #1e293b;
+  border-left: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .studio-layout {
+    flex-direction: column;
+    height: auto;
+  }
+  .studio-chat {
+    width: 100%;
+    height: 350px;
+    border-left: none;
+    border-top: 1px solid #334155;
+  }
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.animate-bounce {
+  animation: bounce 0.6s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<div id="app"><div class="min-h-screen bg-main p-4"><div class="container"><div class="flex items-center justify-between mb-8 flex-wrap gap-4"><div class="flex items-center gap-2"><span style="font-size:30px">🌊</span><span class="text-2xl font-black">RIVER PULLZ</span><span class="text-slate-500 text-sm" style="margin-left:8px">LLC</span></div><button onclick="navigate(&#39;studio&#39;)" class="btn btn-live flex items-center gap-2"><div style="width:8px;height:8px;background:#fff;border-radius:50%" class="animate-pulse"></div>Live Studio</button></div><div class="text-center mb-12"><div style="display:inline-block;background:rgba(6,182,212,0.2);color:#22d3ee;padding:8px 16px;border-radius:9999px;margin-bottom:16px;font-size:14px">✨ Dual-Platform Streaming Built-In</div><h1 class="text-5xl font-black mb-4">PULL CARDS.<br><span class="gradient-text">BUILD EMPIRE.</span></h1><p class="text-slate-400 text-lg mb-6" style="max-width:540px;margin:0 auto 24px">The first multi-creator Pokemon TCG mystery box platform with built-in TikTok + YouTube simultaneous streaming.</p><div class="flex gap-4 justify-center flex-wrap"><button onclick="navigate(&#39;studio&#39;)" class="btn btn-primary">🎬 Try Live Studio</button><button onclick="navigate(&#39;storefront&#39;)" class="btn btn-secondary">🛒 View Storefront</button></div></div><div class="grid grid-2 mb-12"><div class="card"><div class="flex items-center gap-3 mb-2"><div class="w-10 bg-tiktok rounded flex items-center justify-center"><svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg></div><div class="w-10 bg-red rounded flex items-center justify-center"><svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></div></div><div class="font-bold text-lg">Dual-Platform Streaming</div><div class="text-slate-400 text-sm">Go live on TikTok + YouTube with one click</div></div><div class="card"><div style="font-size:30px;margin-bottom:8px">💬</div><div class="font-bold text-lg">Unified Chat</div><div class="text-slate-400 text-sm">See messages from both platforms in one feed</div></div><div class="card"><div style="font-size:30px;margin-bottom:8px">🎁</div><div class="font-bold text-lg">Cross-Platform Giveaways</div><div class="text-slate-400 text-sm">Run giveaways that pull from both chats</div></div><div class="card"><div style="font-size:30px;margin-bottom:8px">🏪</div><div class="font-bold text-lg">Creator Storefronts</div><div class="text-slate-400 text-sm">Streamers launch their own branded shops</div></div></div><div class="bg-green-subtle rounded-xl p-6 mb-8 text-center"><div class="text-green font-bold text-lg mb-2">Revenue Model</div><div class="text-3xl font-black mb-2">70% Creator / 30% Platform</div><div class="text-slate-400">Creators keep the majority. Platform handles payments, shipping, and infrastructure.</div></div><div class="text-center mb-6"><div class="text-xl font-bold mb-4">How It Works</div><div class="flex justify-center gap-4 flex-wrap"><div class="bg-slate-800 rounded-xl p-4" style="flex:1;min-width:150px;max-width:200px"><div class="w-8 bg-cyan rounded-full flex items-center justify-center font-bold" style="margin:0 auto 8px">1</div><div class="font-bold text-sm">Creator Sets Up Shop</div><div class="text-slate-400 text-xs">Curate mystery boxes with real cards</div></div><div class="bg-slate-800 rounded-xl p-4" style="flex:1;min-width:150px;max-width:200px"><div class="w-8 bg-cyan rounded-full flex items-center justify-center font-bold" style="margin:0 auto 8px">2</div><div class="font-bold text-sm">Go Live</div><div class="text-slate-400 text-xs">Stream to TikTok + YouTube simultaneously</div></div><div class="bg-slate-800 rounded-xl p-4" style="flex:1;min-width:150px;max-width:200px"><div class="w-8 bg-cyan rounded-full flex items-center justify-center font-bold" style="margin:0 auto 8px">3</div><div class="font-bold text-sm">Viewers Buy and Pull</div><div class="text-slate-400 text-xs">Open boxes live, cards ship to winners</div></div></div></div><div class="text-center text-slate-500 text-sm mt-12 border-top" style="padding-top:24px">2024 River Pullz LLC. All rights reserved.</div></div></div></div>
+
+<script>
+// State
+var currentView = 'home';
+var isLive = false;
+var streamTime = 0;
+var streamInterval = null;
+var chatInterval = null;
+var chatFilter = 'all';
+var showGiveaway = false;
+var giveawayEntries = [];
+var winner = null;
+var selectedBox = null;
+var boxPhase = 'idle';
+var revealedCards = [];
+
+var chatMessages = [
+  {id: 1, platform: 'tiktok', user: 'pokemon_lover99', message: 'LETS GOO'},
+  {id: 2, platform: 'youtube', user: 'TCGCollector', message: 'Open the legendary box!'},
+  {id: 3, platform: 'tiktok', user: 'card_hunter', message: 'Just bought gems!'},
+  {id: 4, platform: 'youtube', user: 'RareFinds', message: 'That pull was insane'}
+];
+
+var BOXES = [
+  {id: 1, name: 'Starter', price: 15, gradient: 'bg-box-1'},
+  {id: 2, name: 'Hype Box', price: 35, gradient: 'bg-box-2'},
+  {id: 3, name: 'Ultra Rare', price: 75, gradient: 'bg-box-3'},
+  {id: 4, name: 'Legendary', price: 150, gradient: 'bg-box-4'}
+];
+
+var CARDS = [
+  {name: 'Charizard VMAX', rarity: 'Ultra Rare', value: '$180', icon: '🔥'},
+  {name: 'Pikachu VMAX', rarity: 'Rainbow', value: '$95', icon: '⚡'},
+  {name: 'Umbreon VMAX', rarity: 'Alt Art', value: '$420', icon: '🌙'},
+  {name: 'Mew VMAX', rarity: 'Alt Art', value: '$85', icon: '✨'},
+  {name: 'Rayquaza VMAX', rarity: 'Alt Art', value: '$310', icon: '🐉'}
+];
+
+var tiktokIcon = '<svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>';
+
+var youtubeIcon = '<svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>';
+
+var tiktokSmall = '<svg style="width:12px;height:12px" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>';
+
+var youtubeSmall = '<svg style="width:12px;height:12px" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>';
+
+function formatTime(seconds) {
+  var h = Math.floor(seconds / 3600);
+  var m = Math.floor((seconds % 3600) / 60);
+  var s = seconds % 60;
+  return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+}
+
+function shuffle(array) {
+  var result = array.slice();
+  for (var i = result.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = result[i];
+    result[i] = result[j];
+    result[j] = temp;
+  }
+  return result;
+}
+
+function navigate(view) {
+  currentView = view;
+  render();
+}
+
+function toggleLive() {
+  isLive = !isLive;
+  if (isLive) {
+    streamTime = 0;
+    streamInterval = setInterval(function() {
+      streamTime++;
+      render();
+    }, 1000);
+    startChat();
+  } else {
+    clearInterval(streamInterval);
+    clearInterval(chatInterval);
+  }
+  render();
+}
+
+function startChat() {
+  var users = ['card_master', 'poke_fan', 'rare_collector', 'tcg_lover', 'shiny_hunter'];
+  var messages = ['🔥🔥', 'LETS GO!', '!enter', 'Amazing!', 'Open another!', '!enter', 'Wow!', '!enter'];
+  
+  chatInterval = setInterval(function() {
+    var platform = Math.random() > 0.5 ? 'tiktok' : 'youtube';
+    var msg = {
+      id: Date.now(),
+      platform: platform,
+      user: users[Math.floor(Math.random() * users.length)] + Math.floor(Math.random() * 100),
+      message: messages[Math.floor(Math.random() * messages.length)]
+    };
+    chatMessages.unshift(msg);
+    if (chatMessages.length > 30) chatMessages.pop();
+    
+    if (showGiveaway && msg.message.indexOf('!enter') !== -1) {
+      var exists = false;
+      for (var i = 0; i < giveawayEntries.length; i++) {
+        if (giveawayEntries[i].user === msg.user) {
+          exists = true;
+          break;
+        }
+      }
+      if (!exists) {
+        giveawayEntries.push({user: msg.user, platform: msg.platform});
+      }
+    }
+    render();
+  }, 1500);
+}
+
+function setFilter(filter) {
+  chatFilter = filter;
+  render();
+}
+
+function toggleGiveaway() {
+  showGiveaway = !showGiveaway;
+  if (showGiveaway) {
+    giveawayEntries = [];
+    winner = null;
+  }
+  render();
+}
+
+function pickWinner() {
+  if (giveawayEntries.length > 0) {
+    winner = giveawayEntries[Math.floor(Math.random() * giveawayEntries.length)];
+    render();
+  }
+}
+
+function openBox(id) {
+  for (var i = 0; i < BOXES.length; i++) {
+    if (BOXES[i].id === id) {
+      selectedBox = BOXES[i];
+      break;
+    }
+  }
+  boxPhase = 'opening';
+  render();
+  setTimeout(function() {
+    revealedCards = shuffle(CARDS).slice(0, 3);
+    boxPhase = 'revealed';
+    render();
+  }, 2000);
+}
+
+function closeBox() {
+  selectedBox = null;
+  boxPhase = 'idle';
+  revealedCards = [];
+  render();
+}
+
+function openAnother() {
+  boxPhase = 'opening';
+  render();
+  setTimeout(function() {
+    revealedCards = shuffle(CARDS).slice(0, 3);
+    boxPhase = 'revealed';
+    render();
+  }, 2000);
+}
+
+function renderHome() {
+  return '<div class="min-h-screen bg-main p-4">' +
+    '<div class="container">' +
+      '<div class="flex items-center justify-between mb-8 flex-wrap gap-4">' +
+        '<div class="flex items-center gap-2">' +
+          '<span style="font-size:30px">🌊</span>' +
+          '<span class="text-2xl font-black">RIVER PULLZ</span>' +
+          '<span class="text-slate-500 text-sm" style="margin-left:8px">LLC</span>' +
+        '</div>' +
+        '<button onclick="navigate(\'studio\')" class="btn btn-live flex items-center gap-2">' +
+          '<div style="width:8px;height:8px;background:#fff;border-radius:50%" class="animate-pulse"></div>' +
+          'Live Studio' +
+        '</button>' +
+      '</div>' +
+      '<div class="text-center mb-12">' +
+        '<div style="display:inline-block;background:rgba(6,182,212,0.2);color:#22d3ee;padding:8px 16px;border-radius:9999px;margin-bottom:16px;font-size:14px">✨ Dual-Platform Streaming Built-In</div>' +
+        '<h1 class="text-5xl font-black mb-4">PULL CARDS.<br/><span class="gradient-text">BUILD EMPIRE.</span></h1>' +
+        '<p class="text-slate-400 text-lg mb-6" style="max-width:540px;margin:0 auto 24px">The first multi-creator Pokemon TCG mystery box platform with built-in TikTok + YouTube simultaneous streaming.</p>' +
+        '<div class="flex gap-4 justify-center flex-wrap">' +
+          '<button onclick="navigate(\'studio\')" class="btn btn-primary">🎬 Try Live Studio</button>' +
+          '<button onclick="navigate(\'storefront\')" class="btn btn-secondary">🛒 View Storefront</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="grid grid-2 mb-12">' +
+        '<div class="card"><div class="flex items-center gap-3 mb-2"><div class="w-10 bg-tiktok rounded flex items-center justify-center">' + tiktokIcon + '</div><div class="w-10 bg-red rounded flex items-center justify-center">' + youtubeIcon + '</div></div><div class="font-bold text-lg">Dual-Platform Streaming</div><div class="text-slate-400 text-sm">Go live on TikTok + YouTube with one click</div></div>' +
+        '<div class="card"><div style="font-size:30px;margin-bottom:8px">💬</div><div class="font-bold text-lg">Unified Chat</div><div class="text-slate-400 text-sm">See messages from both platforms in one feed</div></div>' +
+        '<div class="card"><div style="font-size:30px;margin-bottom:8px">🎁</div><div class="font-bold text-lg">Cross-Platform Giveaways</div><div class="text-slate-400 text-sm">Run giveaways that pull from both chats</div></div>' +
+        '<div class="card"><div style="font-size:30px;margin-bottom:8px">🏪</div><div class="font-bold text-lg">Creator Storefronts</div><div class="text-slate-400 text-sm">Streamers launch their own branded shops</div></div>' +
+      '</div>' +
+      '<div class="bg-green-subtle rounded-xl p-6 mb-8 text-center">' +
+        '<div class="text-green font-bold text-lg mb-2">Revenue Model</div>' +
+        '<div class="text-3xl font-black mb-2">70% Creator / 30% Platform</div>' +
+        '<div class="text-slate-400">Creators keep the majority. Platform handles payments, shipping, and infrastructure.</div>' +
+      '</div>' +
+      '<div class="text-center mb-6">' +
+        '<div class="text-xl font-bold mb-4">How It Works</div>' +
+        '<div class="flex justify-center gap-4 flex-wrap">' +
+          '<div class="bg-slate-800 rounded-xl p-4" style="flex:1;min-width:150px;max-width:200px"><div class="w-8 bg-cyan rounded-full flex items-center justify-center font-bold" style="margin:0 auto 8px">1</div><div class="font-bold text-sm">Creator Sets Up Shop</div><div class="text-slate-400 text-xs">Curate mystery boxes with real cards</div></div>' +
+          '<div class="bg-slate-800 rounded-xl p-4" style="flex:1;min-width:150px;max-width:200px"><div class="w-8 bg-cyan rounded-full flex items-center justify-center font-bold" style="margin:0 auto 8px">2</div><div class="font-bold text-sm">Go Live</div><div class="text-slate-400 text-xs">Stream to TikTok + YouTube simultaneously</div></div>' +
+          '<div class="bg-slate-800 rounded-xl p-4" style="flex:1;min-width:150px;max-width:200px"><div class="w-8 bg-cyan rounded-full flex items-center justify-center font-bold" style="margin:0 auto 8px">3</div><div class="font-bold text-sm">Viewers Buy and Pull</div><div class="text-slate-400 text-xs">Open boxes live, cards ship to winners</div></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="text-center text-slate-500 text-sm mt-12 border-top" style="padding-top:24px">2024 River Pullz LLC. All rights reserved.</div>' +
+    '</div>' +
+  '</div>';
+}
+
+function renderStorefront() {
+  var boxesHtml = '';
+  for (var i = 0; i < BOXES.length; i++) {
+    var b = BOXES[i];
+    boxesHtml += '<div class="bg-slate-800 border rounded-xl p-4 text-center">' +
+      '<div class="w-16 ' + b.gradient + ' rounded-xl flex items-center justify-center" style="margin:0 auto 12px;font-size:24px">📦</div>' +
+      '<div class="font-bold">' + b.name + '</div>' +
+      '<div class="text-cyan text-sm mb-3">$' + b.price + '</div>' +
+      '<button onclick="openBox(' + b.id + ')" class="btn bg-cyan w-full" style="padding:8px;border-radius:8px">Open</button>' +
+    '</div>';
+  }
+  
+  var html = '<div class="min-h-screen bg-main p-4">' +
+    '<div class="container">' +
+      '<div class="flex items-center justify-between mb-6">' +
+        '<button onclick="navigate(\'home\')" class="btn text-slate-400" style="background:none">← Back</button>' +
+        '<button onclick="navigate(\'studio\')" class="btn bg-red btn-small">Go Live</button>' +
+      '</div>' +
+      '<div class="bg-purple-gradient rounded-2xl p-6 mb-6">' +
+        '<div class="flex items-center gap-4">' +
+          '<div class="w-20 bg-white-20 rounded-xl flex items-center justify-center" style="font-size:40px">👑</div>' +
+          '<div>' +
+            '<div class="text-2xl font-black">Your Storefront</div>' +
+            '<div style="color:rgba(255,255,255,0.7)">Example Creator Shop</div>' +
+            '<div class="text-sm mt-2" style="color:rgba(255,255,255,0.5)">This is what your branded store looks like to viewers</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<h2 class="text-xl font-bold mb-4">Your Mystery Boxes</h2>' +
+      '<div class="grid grid-4 mb-6">' + boxesHtml + '</div>' +
+      '<div class="card text-center text-slate-400">' +
+        '<div class="text-sm">💡 As a creator, you curate real Pokemon cards into these mystery boxes.</div>' +
+        '<div class="text-sm">Viewers purchase gems, open boxes, and cards ship directly to them.</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>';
+  
+  if (selectedBox) {
+    html += renderModal();
+  }
+  
+  return html;
+}
+
+function renderStudio() {
+  var filteredChat = [];
+  for (var i = 0; i < chatMessages.length; i++) {
+    if (chatFilter === 'all' || chatMessages[i].platform === chatFilter) {
+      filteredChat.push(chatMessages[i]);
+    }
+  }
+  
+  var chatHtml = '';
+  if (!isLive) {
+    chatHtml = '<div class="text-center text-slate-500" style="margin-top:32px">' +
+      '<div style="font-size:30px;margin-bottom:8px">💬</div>' +
+      '<div>Go live to see chat</div>' +
+      '<div class="text-xs mt-2">Messages from TikTok + YouTube appear here</div>' +
+    '</div>';
+  } else {
+    for (var i = 0; i < filteredChat.length; i++) {
+      var m = filteredChat[i];
+      var platformClass = m.platform === 'tiktok' ? 'bg-tiktok' : 'bg-red';
+      var textClass = m.platform === 'tiktok' ? 'text-pink' : 'text-red';
+      var icon = m.platform === 'tiktok' ? tiktokSmall : youtubeSmall;
+      chatHtml += '<div class="flex gap-2 mb-3">' +
+        '<div style="width:24px;height:24px;border-radius:50%;flex-shrink:0" class="' + platformClass + ' flex items-center justify-center">' + icon + '</div>' +
+        '<div><span class="font-bold text-sm ' + textClass + '">' + m.user + '</span><div class="text-slate-300 text-sm">' + m.message + '</div></div>' +
+      '</div>';
+    }
+  }
+  
+  var boxesHtml = '';
+  for (var i = 0; i < BOXES.length; i++) {
+    var b = BOXES[i];
+    boxesHtml += '<button onclick="openBox(' + b.id + ')" ' + (!isLive ? 'disabled' : '') + ' class="btn bg-slate-700 rounded-xl p-3 text-center w-full">' +
+      '<div class="w-12 ' + b.gradient + ' rounded flex items-center justify-center" style="margin:0 auto 8px;font-size:20px">📦</div>' +
+      '<div class="text-sm font-bold">' + b.name + '</div>' +
+      '<div class="text-cyan text-xs">$' + b.price + '</div>' +
+    '</button>';
+  }
+  
+  var liveIndicator = isLive ? '<div class="flex items-center gap-2 bg-red-20 text-red p-2 rounded-full"><div style="width:8px;height:8px;background:#ef4444;border-radius:50%" class="animate-pulse"></div>LIVE ' + formatTime(streamTime) + '</div>' : '';
+  
+  var streamOverlays = '';
+  if (isLive) {
+    streamOverlays = '<div class="absolute" style="top:16px;left:16px;background:#ef4444;padding:8px 12px;border-radius:8px;font-size:14px;font-weight:700" class="flex items-center gap-2"><div style="width:8px;height:8px;background:#fff;border-radius:50%" class="animate-pulse"></div>LIVE</div>' +
+      '<div class="absolute flex gap-2" style="top:16px;right:16px">' +
+        '<div class="bg-overlay p-2 rounded flex items-center gap-2 text-sm">' + tiktokIcon + ' Connected</div>' +
+        '<div class="bg-overlay p-2 rounded flex items-center gap-2 text-sm text-red">' + youtubeIcon + ' Connected</div>' +
+      '</div>';
+    
+    if (showGiveaway) {
+      var giveawayContent = winner ?
+        '<div class="bg-yellow-20" style="border:1px solid rgba(234,179,8,0.5);border-radius:8px;padding:8px;text-align:center"><div class="text-yellow text-xs">🎉 WINNER 🎉</div><div class="font-bold">' + winner.user + '</div></div>' :
+        '<button onclick="pickWinner()" ' + (giveawayEntries.length === 0 ? 'disabled' : '') + ' class="btn bg-yellow w-full" style="padding:8px;border-radius:8px;color:#000">Pick Winner</button>';
+      
+      streamOverlays += '<div class="absolute bg-overlay-dark rounded-xl p-4" style="bottom:16px;left:16px;width:256px">' +
+        '<div class="flex items-center gap-2 mb-2"><span style="font-size:18px">🎁</span><span class="font-bold text-purple">GIVEAWAY</span><span class="ml-auto text-sm text-slate-400">' + giveawayEntries.length + ' entries</span></div>' +
+        '<div class="text-sm text-slate-300 mb-2">Type <span class="text-cyan">!enter</span> to join!</div>' +
+        giveawayContent +
+      '</div>';
+    }
+  }
+  
+  var html = '<div class="min-h-screen bg-slate-900">' +
+    '<div class="bg-slate-800 border-bottom p-3 flex items-center justify-between flex-wrap gap-2">' +
+      '<div class="flex items-center gap-4">' +
+        '<button onclick="navigate(\'home\')" class="btn text-slate-400" style="background:none">← Exit</button>' +
+        '<div class="flex items-center gap-2"><span style="font-size:20px">🌊</span><span class="font-bold">RIVER PULLZ</span><span class="text-slate-500">Live Studio</span></div>' +
+      '</div>' +
+      '<div class="flex items-center gap-4">' +
+        liveIndicator +
+        '<button onclick="toggleLive()" class="btn ' + (isLive ? 'bg-slate-700' : 'bg-red') + ' btn-small">' + (isLive ? '⏹ End Stream' : '🔴 Go Live') + '</button>' +
+      '</div>' +
+    '</div>' +
+    '<div class="studio-layout">' +
+      '<div class="studio-main">' +
+        '<div class="bg-slate-800 rounded-xl overflow-hidden">' +
+          '<div class="aspect-video bg-slate-700 relative flex items-center justify-center">' +
+            '<div class="text-center">' +
+              '<div class="w-24 bg-cyan-gradient rounded-full flex items-center justify-center" style="margin:0 auto 12px;font-size:40px">👑</div>' +
+              '<div class="text-slate-400">' + (isLive ? 'Your Camera Feed' : 'Click Go Live to start streaming') + '</div>' +
+            '</div>' +
+            streamOverlays +
+          '</div>' +
+          '<div class="p-3 flex items-center justify-between border-top flex-wrap gap-2">' +
+            '<div class="flex gap-2">' +
+              '<button class="btn bg-slate-700 w-10 rounded">🎤</button>' +
+              '<button class="btn bg-slate-700 w-10 rounded">📹</button>' +
+              '<button class="btn bg-slate-700 w-10 rounded">🖥</button>' +
+            '</div>' +
+            '<button onclick="toggleGiveaway()" ' + (!isLive ? 'disabled' : '') + ' class="btn ' + (showGiveaway ? 'bg-yellow' : 'bg-slate-700') + ' btn-small" style="color:' + (showGiveaway ? '#000' : '#fff') + '">🎁 ' + (showGiveaway ? 'End Giveaway' : 'Start Giveaway') + '</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="grid grid-2">' +
+          '<div class="bg-slate-800 rounded-xl p-4"><div class="flex items-center gap-3"><div class="w-10 bg-tiktok rounded flex items-center justify-center">' + tiktokIcon + '</div><div class="flex-1"><div class="font-bold">TikTok Live</div><div class="text-slate-400 text-sm">@your_username</div></div><div class="p-2 rounded text-xs ' + (isLive ? 'bg-green-20 text-green' : 'bg-slate-700 text-slate-400') + '">' + (isLive ? 'Streaming' : 'Ready') + '</div></div></div>' +
+          '<div class="bg-slate-800 rounded-xl p-4"><div class="flex items-center gap-3"><div class="w-10 bg-red rounded flex items-center justify-center">' + youtubeIcon + '</div><div class="flex-1"><div class="font-bold">YouTube Live</div><div class="text-slate-400 text-sm">Your Channel</div></div><div class="p-2 rounded text-xs ' + (isLive ? 'bg-green-20 text-green' : 'bg-slate-700 text-slate-400') + '">' + (isLive ? 'Streaming' : 'Ready') + '</div></div></div>' +
+        '</div>' +
+        '<div class="bg-slate-800 rounded-xl p-4">' +
+          '<div class="flex items-center justify-between mb-3"><span class="font-bold">Quick Pull</span><span class="text-slate-400 text-sm">Select a box to open on stream</span></div>' +
+          '<div class="grid grid-4">' + boxesHtml + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="studio-chat">' +
+        '<div class="p-4 border-bottom">' +
+          '<div class="flex items-center justify-between mb-3"><span class="font-bold">💬 Unified Chat</span></div>' +
+          '<div class="flex gap-2">' +
+            '<button onclick="setFilter(\'all\')" class="btn btn-small ' + (chatFilter === 'all' ? 'bg-cyan-20 text-cyan' : 'bg-slate-700 text-slate-400') + '">All</button>' +
+            '<button onclick="setFilter(\'tiktok\')" class="btn btn-small flex items-center gap-2 ' + (chatFilter === 'tiktok' ? 'bg-cyan-20 text-cyan' : 'bg-slate-700 text-slate-400') + '">' + tiktokSmall + ' TikTok</button>' +
+            '<button onclick="setFilter(\'youtube\')" class="btn btn-small flex items-center gap-2 ' + (chatFilter === 'youtube' ? 'bg-cyan-20 text-cyan' : 'bg-slate-700 text-slate-400') + '">' + youtubeSmall + ' YouTube</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="chat-messages">' + chatHtml + '</div>' +
+        '<div class="p-4 border-top">' +
+          '<div class="flex gap-2">' +
+            '<input type="text" placeholder="' + (isLive ? 'Send to both platforms...' : 'Go live to chat') + '" ' + (!isLive ? 'disabled' : '') + ' class="flex-1">' +
+            '<button ' + (!isLive ? 'disabled' : '') + ' class="btn bg-cyan p-2 rounded">📤</button>' +
+          '</div>' +
+          '<div class="text-center text-slate-500 text-xs mt-2">TikTok + YouTube = Synced</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>';
+  
+  if (selectedBox) {
+    html += renderModal();
+  }
+  
+  return html;
+}
+
+function renderModal() {
+  if (!selectedBox) return '';
+  
+  if (boxPhase === 'opening') {
+    return '<div class="modal">' +
+      '<div class="modal-content">' +
+        '<div class="w-24 ' + selectedBox.gradient + ' rounded-2xl flex items-center justify-center animate-bounce" style="margin:0 auto 16px;font-size:40px">📦</div>' +
+        '<div class="text-xl font-bold mb-2">Opening ' + selectedBox.name + '...</div>' +
+        '<div class="flex justify-center gap-2">' +
+          '<div style="width:8px;height:8px;background:#fff;border-radius:50%" class="animate-bounce"></div>' +
+          '<div style="width:8px;height:8px;background:#fff;border-radius:50%" class="animate-bounce delay-1"></div>' +
+          '<div style="width:8px;height:8px;background:#fff;border-radius:50%" class="animate-bounce delay-2"></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }
+  
+  if (boxPhase === 'revealed') {
+    var cardsHtml = '';
+    for (var i = 0; i < revealedCards.length; i++) {
+      var c = revealedCards[i];
+      cardsHtml += '<div class="bg-slate-700 rounded-xl p-3">' +
+        '<div style="font-size:30px;margin-bottom:4px">' + c.icon + '</div>' +
+        '<div class="text-xs font-bold">' + c.name + '</div>' +
+        '<div class="text-purple text-xs">' + c.rarity + '</div>' +
+        '<div class="text-green text-xs">' + c.value + '</div>' +
+      '</div>';
+    }
+    
+    return '<div class="modal">' +
+      '<div class="modal-content">' +
+        '<div class="text-xl font-bold mb-4">🎉 Your Pulls!</div>' +
+        '<div class="grid grid-3 mb-4">' + cardsHtml + '</div>' +
+        '<div class="flex gap-2">' +
+          '<button onclick="closeBox()" class="btn bg-slate-700 flex-1" style="padding:8px;border-radius:8px">Close</button>' +
+          '<button onclick="openAnother()" class="btn bg-yellow flex-1" style="padding:8px;border-radius:8px;color:#000">Open Another</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }
+  
+  return '';
+}
+
+function render() {
+  var app = document.getElementById('app');
+  if (currentView === 'home') {
+    app.innerHTML = renderHome();
+  } else if (currentView === 'storefront') {
+    app.innerHTML = renderStorefront();
+  } else if (currentView === 'studio') {
+    app.innerHTML = renderStudio();
+  }
+}
+
+render();
+</script>
+
+
+</body></html>
